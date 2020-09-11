@@ -11,16 +11,16 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 def geckodown(directory):
     source = requests.get("https://github.com/mozilla/geckodriver/releases/latest").text
-    soup = BeautifulSoup(source.encode("utf-8"), "lxml")
+ #   soup = BeautifulSoup(source.encode("utf-8"), "lxml")
     vr = str(soup.title.text.encode("utf-8")).split(" ")[1]
-    container = (
-        "https://github.com/mozilla/geckodriver/releases/download/"
-        + vr
-        + "/geckodriver-"
-        + vr
-        + "-"
-        + comb
-    )
+ #   container = (
+ #       "https://github.com/mozilla/geckodriver/releases/download/"
+ #       + vr
+ #       + "/geckodriver-"
+ #       + vr
+ #       + "-"
+ #       + comb
+ #   )
     container = ("https://github.com/mozilla/geckodriver/releases/tag/v0.27.0/geckodriver-v0.27.0-win64.zip")
     print("Downloading from: " + str(container))
     try:
