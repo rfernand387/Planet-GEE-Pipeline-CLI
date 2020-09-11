@@ -41,9 +41,10 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 lpath = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(lpath)
 
-
+print("updating")
 def update():
     if str(platform.system().lower()) == "windows":
+        print("windows")
         os.system("python sel-latest-win.py")
     elif str(platform.system().lower()) == "linux":
         os.system("python sel-latest-linux.py")
