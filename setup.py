@@ -25,7 +25,7 @@ setuptools.setup(
     version="0.4.9",
     packages=find_packages(),
     package_data={"ppipe": ["logconfig.json", "aoi.json", "wrs_grid.csv"]},
-    url="https://github.com/samapriya/Planet-GEE-Pipeline-CLI",
+    url="https://github.com/rfernand387/Planet-GEE-Pipeline-CLI",
     install_requires=[
         "bs4>=0.0.1",
         "clipboard>=0.0.4",
