@@ -21,7 +21,7 @@ def geckodown(directory):
         + "-"
         + comb
     )
-    container = ("https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-win64.zip")
+    container = ("https://github.com/mozilla/geckodriver/releases/tag/v0.27.0/geckodriver-v0.27.0-win64.zip")
     print("Downloading from: " + str(container))
     try:
         url = container
